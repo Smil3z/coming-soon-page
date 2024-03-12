@@ -14,7 +14,7 @@ const MatrixRain = () => {
     const charArray = characters.split("");
     let drops = [];
 
-    // Initialize drops
+    // Start animaion drops
     for (let i = 0; i < columns; i++) {
       drops[i] = 1;
     }
@@ -27,7 +27,8 @@ const MatrixRain = () => {
       ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
       ctx.fillRect(0, 0, width, height);
 
-      ctx.fillStyle = "#0cc3fe"; // Light blue color for characters
+      // Light blue color for characters
+      ctx.fillStyle = "#0cc3fe";
 
       // Draw the characters
       ctx.font = "15px monospace";

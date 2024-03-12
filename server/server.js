@@ -3,7 +3,7 @@ const exampleRouter = require('./routes/example.router');
 
 const app = express();
 //the port in your vite.config must match the port here
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // Vite will put all static files into a build folder 
 // when deployed to Heroku
